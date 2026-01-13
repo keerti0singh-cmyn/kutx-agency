@@ -7,13 +7,29 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        'neon-purple': '#a855f7',
-        'neon-blue': '#3b82f6',
-        'neon-cyan': '#06b6d4',
-        'dark-bg': '#000000',
-      },
+  extend: {
+    colors: {
+      bg: "#0b0f14",        // main dark background
+      panel: "#0f172a",     // cards / sections
+      border: "#1e293b",    // borders
+      text: "#e5e7eb",      // main text
+      muted: "#94a3b8",     // secondary text
+
+      neon: "#38bdf8",      // cyan neon
+      neon2: "#a78bfa",     // purple neon
+      danger: "#f87171",
+    },
+    boxShadow: {
+      neon: "0 0 25px rgba(56,189,248,0.25)",
+      glow: "0 0 40px rgba(167,139,250,0.15)",
+    },
+    backgroundImage: {
+      cyber:
+        "radial-gradient(circle at top, rgba(56,189,248,0.15), transparent 60%)",
+    },
+  },
+},
+
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
